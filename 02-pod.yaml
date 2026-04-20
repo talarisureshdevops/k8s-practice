@@ -1,7 +1,23 @@
+# apiVersion: v1
+# kind: Pod
+# metadata:
+#   name: nginx-Pod
+#   namespace: roboshop
+#   labels:
+#     app: nginx
+#     env: dev
+# spec:
+#   containers:
+#   - name: nginx
+#   image: nginx
+#   ports:
+#   - containerport: 80
+#   imagepullpolicy: IfNotPresent
+
 apiVersion: v1
 kind: Pod
 metadata:
-  name: nginx-Pod
+  name: nginx-pod
   namespace: roboshop
   labels:
     app: nginx
@@ -9,7 +25,7 @@ metadata:
 spec:
   containers:
   - name: nginx
-  image: nginx
-  ports:
-  - containerport: 80
-  imagepullpolicy: IfNotPresent
+    image: nginx
+    ports:
+    - containerPort: 80
+    imagePullPolicy: IfNotPresent
