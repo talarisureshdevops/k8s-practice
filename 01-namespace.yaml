@@ -5,4 +5,4 @@ metadata:
   labels:
     environment: developement
     team: dev-team
-    managed by: dev
+    managedby: dev
