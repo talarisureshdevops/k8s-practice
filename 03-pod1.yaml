@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: frontend1
+  namespace: roboshop
   labels:
     app: frontend
     version: v1
@@ -11,4 +12,3 @@ spec:
   containers:
   - name: frontend
     image: nginx
-    
