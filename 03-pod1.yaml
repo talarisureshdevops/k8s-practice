@@ -4,8 +4,8 @@ metadata:
   name: frontend1
   namespace: roboshop
   labels:
-    app: frontend
-    environment: production
+    app: frontend1
+    environment: production1
 spec:
   containers:
   - name: frontend
