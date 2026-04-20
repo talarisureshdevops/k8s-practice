@@ -10,5 +10,5 @@ spec:
     environment: production
   ports:
   - port: 80
-    targetPort: 3000
+    # targetPort: 3000
     nodePort: 30007   # optional (range: 30000–32767)
