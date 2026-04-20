@@ -5,9 +5,7 @@ metadata:
   namespace: roboshop
   labels:
     app: frontend
-    version: v1
     environment: production
-    tier: web
 spec:
   containers:
   - name: frontend
