@@ -4,7 +4,7 @@ metadata:
   name: nginx
   namespace: roboshop
 spec:
-  type: CluserIP
+  type: ClusterIP
   selector:
     project: roboshop
     component: frontend
