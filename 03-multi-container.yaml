@@ -7,10 +7,11 @@ metadata:
     project: roboshop
     component: frontend
     environment: dev
-  spec:
-    containers: 
-    - name: nginx
-      image: nginx
-    - name: almalinux
-      image: almalinux:9
-      command: ["sleep", "1000"]
+spec:
+  containers: 
+  - name: nginx
+    image: nginx
+  - name: almalinux
+    image: almalinux:9
+    command: ["sleep", "1000"]
+
