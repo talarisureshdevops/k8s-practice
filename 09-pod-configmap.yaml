@@ -1,11 +1,12 @@
+
 apiVersion: v1
 kind: Pod
 metadata:
-  name: pod-configmapp-demo
+  name: configmap-demo
 spec:
   containers:
   - name: nginx
     image: nginx
     envFrom:
-    - ConfigMapRef:
-        name: nginx-configmapp
+    - configMapRef:   # ✅ correct (small 'c')
+        name: my-config
