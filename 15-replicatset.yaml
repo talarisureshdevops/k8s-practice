@@ -24,8 +24,8 @@ spec:
         component: frontend
     spec:
       containers: 
-      - name: nginx:1.29.8-alpine-slim
-        image: nginx
+      - name: nginx
+        image: nginx:latest
  
 
 
