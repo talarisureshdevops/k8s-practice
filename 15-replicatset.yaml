@@ -8,7 +8,7 @@ metadata:
     tier: frontend
     component: frontend
 spec:
-  replicas: 10
+  replicas: 1
   selector: 
     matchLabels:
       project: roboshop
