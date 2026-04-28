@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: volume-testing
+spec:
+  containers:
+  - image: nginx
+    name: nginx
+    volumeMounts:
+    - mountPath: var/log/gnix
+      name: nginx-logs
+  - image: almalinux
+    name: almalinux
+    volumeMounts:
+    - mountPath: mnt/gnix/logs
+      name: nginx-logs
+  volumes:
+  - name: nginx-logs
+    emptyDir:
+      sizeLimit: 500Mi # Optional: limits capacity
+      # medium: Memory # Optional: uses RAM instead of disk
